@@ -1,0 +1,24 @@
+{
+  "name": "socket-io-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sam-jespersen-401-advanced-javascript/socket-io-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sam-jespersen-401-advanced-javascript/socket-io-lab/issues"
+  },
+  "homepage": "https://github.com/sam-jespersen-401-advanced-javascript/socket-io-lab#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  }
+}
