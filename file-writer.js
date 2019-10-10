@@ -4,6 +4,7 @@ function writePath(path, data) {
   return fs.writeFile(path, data, (err) => {
     if(err) throw err;
     console.log('File written!');
+    return data;
   });
 }
 

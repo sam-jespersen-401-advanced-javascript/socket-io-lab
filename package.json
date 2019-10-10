@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "jest": "jest --runInBand --verbose",
+    "test": "npm run jest -- --coverage",
+    "test:watch": "npm run jest -- --watchAll",
+    "test:verbose": "npm run test -- --verbose",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +25,7 @@
   },
   "homepage": "https://github.com/sam-jespersen-401-advanced-javascript/socket-io-lab#readme",
   "dependencies": {
+    "jest": "^24.9.0",
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0"
   }
